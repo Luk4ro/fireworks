@@ -270,8 +270,7 @@ void keyboard(unsigned char key, int x, int y) {
 }
 
 void SpecialInput(int key, int x, int y) {
-    switch(key)
-    {
+    switch(key) {
       case GLUT_KEY_UP: //Increase gravity
         gravity += 0.1;
         printf("Gravity: %f\n", gravity);
@@ -307,7 +306,7 @@ void display() {
   // If enabled, draw coordinate axis
   if(axisEnabled) glCallList(axisList);
 
-  for(int i = 0; i < firework_num; i++){
+  for(int i = 0; i < firework_num; i++) {
     glPointSize(fireworkArr[i].fireworkSize);
 
     for(int particle = 0; particle < fireworkArr[i].numOfP; particle++) {
